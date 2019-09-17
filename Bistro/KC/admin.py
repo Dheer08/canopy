@@ -3,4 +3,4 @@ from .models import *
 # Register your models here.
 
 admin.site.register(customer)
-admin.site.register(Account)
+#admin.site.register(Account)

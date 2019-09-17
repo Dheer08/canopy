@@ -29,9 +29,12 @@ def Login(request):
 	else:
 		return render(request,'KC/Login.html')
 
+def SignUp(request):
+		return render(request,'KC/SignUp.html')
 
 
-class UserFormView(View):
+
+'''class UserFormView(View):
 	from_class=UserForm
 	template_name='KC/SignUp.html'
 
@@ -55,7 +58,7 @@ class UserFormView(View):
 			if user is not None:
 				if user.is_active:
 					login(request,user)
-					return redirect('KC:index')
+					return redirect('KC:index')'''	
 
 
 

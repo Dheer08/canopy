@@ -1,5 +1,8 @@
 {% extends 'KC/base.html' %}
+{% load static %}
 
  {% block content %}
- <h5> Hello Everyone welcome to home page</h5>
+ <div class="container" background color="yellow">
+ <h5> Hello Everyone </h5>
+ <img src="{% static 'KC/images/pizza.jpg' %}" height="400" width="450" alt="Image is missing" align="right">
   {% endblock %}
