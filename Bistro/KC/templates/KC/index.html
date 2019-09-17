@@ -3,6 +3,15 @@
 
  {% block content %}
  <div class="container" background color="yellow">
- <h5> Hello Everyone </h5>
+ <h5> Hello Everyone </br></br></h5>
+ <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Enter your order </label>
+    <input type="text" class="form-control" id="order" aria-describedby="emailHelp" placeholder="Enter order">
+    <small id="emailHelp" class="form-text text-muted">Enjoy to your fill</small>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
  <img src="{% static 'KC/images/pizza.jpg' %}" height="400" width="450" alt="Image is missing" align="right">
   {% endblock %}
